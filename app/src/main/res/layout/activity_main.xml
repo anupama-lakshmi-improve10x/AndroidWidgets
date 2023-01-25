@@ -55,4 +55,12 @@
         android:layout_gravity="center"
         android:text="Radio Button"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/rating_bar_rb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Rating bar"
+        android:textAllCaps="false" />
 </LinearLayout>
