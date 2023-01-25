@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         handleSeekBar();
         handleRatingBar();
         handleDatePicker();
+        handleTimePicker();
     }
 
      public void handleAndroidButton() {
@@ -92,6 +93,14 @@ public class MainActivity extends AppCompatActivity {
         Button datePicker = findViewById(R.id.date_picker);
         datePicker.setOnClickListener(v -> {
             Intent intent = new Intent(this, DatePickerActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleTimePicker() {
+        Button timePicker = findViewById(R.id.time_picker_btn);
+        timePicker.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TimePickerActivity.class);
             startActivity(intent);
         });
      }
