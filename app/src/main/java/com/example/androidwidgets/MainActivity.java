@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         handleAlertDialog();
         handleRadioButton();
         handleRatingBar();
+        handleSeekBar();
     }
 
      public void handleAndroidButton() {
@@ -73,6 +74,14 @@ public class MainActivity extends AppCompatActivity {
         Button ratingBar = findViewById(R.id.rating_bar_rb);
         ratingBar.setOnClickListener(v -> {
             Intent intent = new Intent(this, RatingBarActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleSeekBar() {
+        Button seekBar = findViewById(R.id.seek_bar);
+        seekBar.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SeekBarActivity.class);
             startActivity(intent);
         });
      }
