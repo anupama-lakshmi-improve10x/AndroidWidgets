@@ -87,4 +87,21 @@
         android:layout_gravity="center"
         android:text="Time Picker"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/vertical_scroll_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Vertical Scroll View"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/horizontal_scroll_view_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Horizontal Scroll View"
+        android:textAllCaps="false" />
+
 </LinearLayout>

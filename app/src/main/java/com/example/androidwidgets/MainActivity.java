@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         handleRatingBar();
         handleDatePicker();
         handleTimePicker();
+        handleVerticalScrollView();
+        handleHorizontalScrollView();
     }
 
      public void handleAndroidButton() {
@@ -101,6 +103,22 @@ public class MainActivity extends AppCompatActivity {
         Button timePicker = findViewById(R.id.time_picker_btn);
         timePicker.setOnClickListener(v -> {
             Intent intent = new Intent(this, TimePickerActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleVerticalScrollView() {
+        Button verticalScrollView = findViewById(R.id.vertical_scroll_view_btn);
+        verticalScrollView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, VerticalScrollViewActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleHorizontalScrollView() {
+        Button horizontalScrollView = findViewById(R.id.vertical_scroll_view_btn);
+        horizontalScrollView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, HorizontalScrollViewActivity.class);
             startActivity(intent);
         });
      }
