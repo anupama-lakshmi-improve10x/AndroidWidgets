@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
      }
 
      public void handleHorizontalScrollView() {
-        Button horizontalScrollView = findViewById(R.id.vertical_scroll_view_btn);
+        Button horizontalScrollView = findViewById(R.id.horizontal_scroll_view_btn);
         horizontalScrollView.setOnClickListener(v -> {
             Intent intent = new Intent(this, HorizontalScrollViewActivity.class);
             startActivity(intent);
