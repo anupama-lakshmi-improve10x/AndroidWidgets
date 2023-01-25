@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         handleRadioButton();
         handleRatingBar();
         handleSeekBar();
+        handleRatingBar();
+        handleDatePicker();
     }
 
      public void handleAndroidButton() {
@@ -82,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
         Button seekBar = findViewById(R.id.seek_bar);
         seekBar.setOnClickListener(v -> {
             Intent intent = new Intent(this, SeekBarActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleDatePicker() {
+        Button datePicker = findViewById(R.id.date_picker);
+        datePicker.setOnClickListener(v -> {
+            Intent intent = new Intent(this, DatePickerActivity.class);
             startActivity(intent);
         });
      }

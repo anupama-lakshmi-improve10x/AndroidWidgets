@@ -71,4 +71,12 @@
         android:layout_gravity="center"
         android:text="Seek Bar"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Date Picker"
+        android:textAllCaps="false" />
 </LinearLayout>

@@ -24,7 +24,7 @@ public class SeekBarActivity extends AppCompatActivity {
         seekBarBinding.seekBarSb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                Toast.makeText(SeekBarActivity.this, "Seek Bar", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SeekBarActivity.this, "Seek Bar : " + progress, Toast.LENGTH_SHORT).show();
             }
 
             @Override
