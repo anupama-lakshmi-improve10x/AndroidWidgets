@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         handleToggleBtn();
         handleCheckBox();
         handleAlertDialog();
+        handleRadioButton();
     }
 
      public void handleAndroidButton() {
@@ -55,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
         Button alertDialog = findViewById(R.id.alert_dialog_btn);
         alertDialog.setOnClickListener(v -> {
             Intent intent = new Intent(this, AlertDialogActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleRadioButton() {
+        Button radioButton = findViewById(R.id.radiobutton_btn);
+        radioButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RadioButtonActivity.class);
             startActivity(intent);
         });
      }
