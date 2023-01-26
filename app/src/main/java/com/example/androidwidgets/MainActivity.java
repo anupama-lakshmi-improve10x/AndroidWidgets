@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         handleTimePicker();
         handleVerticalScrollView();
         handleHorizontalScrollView();
+        handleListView();
     }
 
      public void handleAndroidButton() {
@@ -119,6 +120,14 @@ public class MainActivity extends AppCompatActivity {
         Button horizontalScrollView = findViewById(R.id.horizontal_scroll_view_btn);
         horizontalScrollView.setOnClickListener(v -> {
             Intent intent = new Intent(this, HorizontalScrollViewActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleListView() {
+        Button listView = findViewById(R.id.list_view_btn);
+        listView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ListViewActivity.class);
             startActivity(intent);
         });
      }

@@ -10,7 +10,7 @@
 
     <Button
         android:id="@+id/android_button_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Android Button"
@@ -18,7 +18,7 @@
 
     <Button
         android:id="@+id/custom_toast_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Custom Toast"
@@ -26,7 +26,7 @@
 
     <Button
         android:id="@+id/toggle_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Toggle Button"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/check_box_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Check Box"
@@ -42,7 +42,7 @@
 
     <Button
         android:id="@+id/alert_dialog_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Alert Dialog"
@@ -50,7 +50,7 @@
 
     <Button
         android:id="@+id/radiobutton_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Radio Button"
@@ -58,7 +58,7 @@
 
     <Button
         android:id="@+id/rating_bar_rb"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Rating bar"
@@ -66,7 +66,7 @@
 
     <Button
         android:id="@+id/seek_bar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Seek Bar"
@@ -74,7 +74,7 @@
 
     <Button
         android:id="@+id/date_picker"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Date Picker"
@@ -82,7 +82,7 @@
 
     <Button
         android:id="@+id/time_picker_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Time Picker"
@@ -90,7 +90,7 @@
 
     <Button
         android:id="@+id/vertical_scroll_view_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Vertical Scroll View"
@@ -98,10 +98,17 @@
 
     <Button
         android:id="@+id/horizontal_scroll_view_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Horizontal Scroll View"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/list_view_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List View"
         android:textAllCaps="false" />
 
 </LinearLayout>
