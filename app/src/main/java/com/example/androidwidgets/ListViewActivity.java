@@ -33,7 +33,7 @@ public class ListViewActivity extends AppCompatActivity {
         teamMembers.add("Om Prakash");
         teamMembers.add("SreeHarasha");
         teamMembers.add("Sunitha");
-        teamMembers.add("Hareesh");
+        teamMembers.add("Harish");
         teamMembers.add("Sumanth");
     }
 

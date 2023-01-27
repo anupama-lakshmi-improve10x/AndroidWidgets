@@ -18,22 +18,35 @@ public class CheckBoxActivity extends AppCompatActivity {
         binding = ActivityCheckBoxBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         handleOrderBtn();
-
     }
 
     private void handleOrderBtn() {
         binding.orderBtn.setOnClickListener(v -> {
-            int totalAmount = 0;
-            if(binding.pizzaCb.isChecked()) {
-                totalAmount += 500;
-            }
-            if(binding.coffeeCb.isChecked()) {
-                totalAmount += 50;
-            }
-            if(binding.sugarCb.isChecked()) {
-                totalAmount += 250;
-            }
-            Toast.makeText(this, String.valueOf(totalAmount), Toast.LENGTH_SHORT).show();
+            boolean isPizzaSelected = binding.pizzaCb.isChecked();
+            boolean isCoffeeSelected = binding.coffeeCb.isChecked();
+            boolean isSugarSelected = binding.sugarCb.isChecked();
+            String orderDetails = createOrder(isPizzaSelected, isCoffeeSelected, isSugarSelected);
+            Toast.makeText(this, orderDetails, Toast.LENGTH_SHORT).show();
+
         });
+    }
+
+    private String createOrder(boolean isPizzaSelected, boolean isCoffeeSelected, boolean isSugarSelected) {
+        int totalAmount = 0;
+        String orderDetails = "Selected Items";
+        if (isPizzaSelected) {
+            totalAmount += 500;
+            orderDetails += "\nPizza:500";
+        }
+        if (isCoffeeSelected) {
+            totalAmount += 50;
+            orderDetails += "\nCoffee:50";
+        }
+        if (isSugarSelected) {
+            totalAmount += 250;
+            orderDetails += "\n Sugar:250";
+        }
+        orderDetails += "\nTotal:Rs" + totalAmount;
+        return orderDetails;
     }
 }
