@@ -12,7 +12,6 @@ import com.example.androidwidgets.databinding.ActivityAndroidButtonBinding;
 public class AndroidButtonActivity extends AppCompatActivity {
 
     ActivityAndroidButtonBinding binding;
-    private Button addBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,15 +23,19 @@ public class AndroidButtonActivity extends AppCompatActivity {
     }
 
     private void handleAddBtn() {
-        addBtn = findViewById(R.id.add_btn);
-        addBtn.setOnClickListener(v -> {
+        binding.addBtn.setOnClickListener(v -> {
             String firstNumber = binding.firstNumberTxt.getText().toString();
             String secondNumber = binding.secondNumberTxt.getText().toString();
-            int number1 = Integer.valueOf(firstNumber);
-            int number2 = Integer.valueOf(secondNumber);
-            int sum = number1 + number2;
+            String sum = add(firstNumber,secondNumber);
             Toast.makeText(this, String.valueOf(sum), Toast.LENGTH_SHORT).show();
         });
+    }
+
+    private String add(String firstNumber, String secondNumber) {
+        int number1 = Integer.valueOf(firstNumber);
+        int number2 = Integer.valueOf(secondNumber);
+        int sum = number1 + number2;
+        return String.valueOf(sum);
     }
 
     private void displayToast() {

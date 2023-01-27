@@ -111,4 +111,11 @@
         android:text="List View"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/custom_list_view_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom List View"
+        android:textAllCaps="false" />
+
 </LinearLayout>

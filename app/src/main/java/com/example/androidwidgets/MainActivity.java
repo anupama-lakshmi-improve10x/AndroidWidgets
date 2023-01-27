@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         handleVerticalScrollView();
         handleHorizontalScrollView();
         handleListView();
+        handleCustomListView();
     }
 
      public void handleAndroidButton() {
@@ -128,6 +129,14 @@ public class MainActivity extends AppCompatActivity {
         Button listView = findViewById(R.id.list_view_btn);
         listView.setOnClickListener(v -> {
             Intent intent = new Intent(this, ListViewActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleCustomListView() {
+        Button customListView = findViewById(R.id.custom_list_view_btn);
+        customListView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CustomListViewActivity.class);
             startActivity(intent);
         });
      }
