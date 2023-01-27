@@ -7,25 +7,24 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import com.example.androidwidgets.databinding.ActivityToggleBinding;
+
 public class ToggleActivity extends AppCompatActivity {
-    private ToggleButton toggleOnBtn;
-    private ToggleButton toggleOfBtn;
-    private Button submitBtn;
+
+    ActivityToggleBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toggle);
+        binding = ActivityToggleBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
         handleSubmitBtn();
     }
 
     private void handleSubmitBtn() {
-        toggleOnBtn = findViewById(R.id.toggle_on_btn);
-        toggleOfBtn = findViewById(R.id.toggle_off_btn);
-        submitBtn = findViewById(R.id.submit_btn);
-        submitBtn.setOnClickListener(v -> {
-            String toggleOn = toggleOnBtn.getText().toString();
-            String toggleOff = toggleOfBtn.getText().toString();
+        binding.submitBtn.setOnClickListener(v -> {
+            String toggleOn = binding.toggleOnBtn.getText().toString();
+            String toggleOff = binding.toggleOffBtn.getText().toString();
             Toast.makeText(this, toggleOn + "\n" + toggleOff , Toast.LENGTH_SHORT).show();
         });
     }

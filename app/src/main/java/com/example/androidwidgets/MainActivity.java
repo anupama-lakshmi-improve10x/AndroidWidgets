@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         handleHorizontalScrollView();
         handleListView();
         handleCustomListView();
+        handleImageSwitcher();
     }
 
      public void handleAndroidButton() {
@@ -137,6 +138,14 @@ public class MainActivity extends AppCompatActivity {
         Button customListView = findViewById(R.id.custom_list_view_btn);
         customListView.setOnClickListener(v -> {
             Intent intent = new Intent(this, CustomListViewActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleImageSwitcher() {
+        Button imageSwitcher = findViewById(R.id.image_switcher_btn);
+        imageSwitcher.setOnClickListener(v -> {
+            Intent intent = new Intent(this,ImageSwitcherActivity.class);
             startActivity(intent);
         });
      }
