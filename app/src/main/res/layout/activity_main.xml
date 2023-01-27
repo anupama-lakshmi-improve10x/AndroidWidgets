@@ -8,121 +8,147 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/android_button_btn"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Android Button"
-        android:textAllCaps="false" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/custom_toast_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Custom Toast"
-        android:textAllCaps="false" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/toggle_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Toggle Button"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/android_button_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Android Button"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/check_box_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Check Box"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/toggle_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Toggle Button"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/alert_dialog_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Alert Dialog"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/custom_toast_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Custom Toast"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/radiobutton_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Radio Button"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/check_box_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Check Box"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/rating_bar_rb"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Rating bar"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/alert_dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Alert Dialog"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/seek_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Seek Bar"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/radiobutton_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Radio Button"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/date_picker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Date Picker"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/rating_bar_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rating bar"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/time_picker_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Time Picker"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Seek Bar"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/vertical_scroll_view_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Vertical Scroll View"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Date Picker"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/horizontal_scroll_view_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Horizontal Scroll View"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/time_picker_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Time Picker"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/list_view_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="List View"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/vertical_scroll_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Vertical Scroll View"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/custom_list_view_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Custom List View"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/horizontal_scroll_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Horizontal Scroll View"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/image_switcher_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Image Switcher"
-        android:textAllCaps="false" />
+            <Button
+                android:id="@+id/list_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List View"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/custom_list_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom List View"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/image_switcher_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image Switcher"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/image_slider_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image Slider"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/progress_dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progress Dialog"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

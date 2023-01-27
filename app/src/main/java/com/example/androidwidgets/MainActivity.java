@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         handleListView();
         handleCustomListView();
         handleImageSwitcher();
+        handleImageSlider();
+        handleProgressDialog();
     }
 
      public void handleAndroidButton() {
@@ -146,6 +148,22 @@ public class MainActivity extends AppCompatActivity {
         Button imageSwitcher = findViewById(R.id.image_switcher_btn);
         imageSwitcher.setOnClickListener(v -> {
             Intent intent = new Intent(this,ImageSwitcherActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleImageSlider() {
+        Button imageSlider = findViewById(R.id.image_slider_btn);
+        imageSlider.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ImageSliderActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleProgressDialog() {
+        Button progressDialog = findViewById(R.id.progress_dialog_btn);
+        progressDialog.setOnClickListener(v -> {
+            Intent intent = new Intent(this, ProgressDialogActivity.class);
             startActivity(intent);
         });
      }
