@@ -42,6 +42,14 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:id="@+id/date_picker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Date Picker"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/check_box_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,14 +87,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Seek Bar"
-                android:textAllCaps="false" />
-
-            <Button
-                android:id="@+id/date_picker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Date Picker"
                 android:textAllCaps="false" />
 
             <Button
@@ -146,6 +146,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Progress Dialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/web_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Web View"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/spinner_sp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spinner"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/custom_alert_dialog_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Alert Dialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/search_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search View"
                 android:textAllCaps="false" />
 
         </LinearLayout>

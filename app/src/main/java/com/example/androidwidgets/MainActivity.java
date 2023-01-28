@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
         handleImageSwitcher();
         handleImageSlider();
         handleProgressDialog();
+        handleWebViewBtn();
+        handleSpinner();
+        handleCustomAlertDialog();
+        handleSearchView();
     }
 
      public void handleAndroidButton() {
@@ -164,6 +168,38 @@ public class MainActivity extends AppCompatActivity {
         Button progressDialog = findViewById(R.id.progress_dialog_btn);
         progressDialog.setOnClickListener(v -> {
             Intent intent = new Intent(this, ProgressDialogActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleWebViewBtn() {
+        Button webView = findViewById(R.id.web_view_btn);
+        webView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, WebViewActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleSpinner() {
+        Button spinner = findViewById(R.id.spinner_sp_btn);
+        spinner.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SpinnerActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleCustomAlertDialog() {
+        Button customAlertDialog = findViewById(R.id.custom_alert_dialog_btn);
+        customAlertDialog.setOnClickListener(v -> {
+            Intent intent = new Intent(this, CustomAlertDialogActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleSearchView() {
+        Button searchView = findViewById(R.id.search_view_btn);
+        searchView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SearchViewActivity.class);
             startActivity(intent);
         });
      }
