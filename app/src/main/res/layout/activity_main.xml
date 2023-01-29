@@ -189,6 +189,12 @@
                 android:layout_height="wrap_content"
                 android:text="Search View(Tool Bar)" />
 
+            <Button
+                android:id="@+id/auto_text_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto Complete Text" />
+
         </LinearLayout>
     </ScrollView>
 

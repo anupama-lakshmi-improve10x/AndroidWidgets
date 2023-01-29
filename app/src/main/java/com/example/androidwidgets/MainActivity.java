@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         handleSearchView();
         handleEditTextWithTextWatcher();
         handleSearchViewToolBar();
+        handleAutoCompleteText();
     }
 
      public void handleAndroidButton() {
@@ -218,6 +220,14 @@ public class MainActivity extends AppCompatActivity {
         Button searchViewToolbar = findViewById(R.id.search_tool_bar_btn);
         searchViewToolbar.setOnClickListener(v -> {
             Intent intent = new Intent(this, SearchViewToolBarActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleAutoCompleteText() {
+        Button autoCompleteView = findViewById(R.id.auto_text_btn);
+        autoCompleteView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AutoCompleteTextViewActivity.class);
             startActivity(intent);
         });
      }

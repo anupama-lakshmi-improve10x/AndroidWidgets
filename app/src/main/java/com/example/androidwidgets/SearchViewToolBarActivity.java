@@ -66,6 +66,4 @@ public class SearchViewToolBarActivity extends AppCompatActivity {
         adapter = new ArrayAdapter<String>(this, android.R.layout.select_dialog_item, list);
         binding.listViewLv.setAdapter(adapter);
     }
-
-
 }
