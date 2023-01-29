@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         handleCustomAlertDialog();
         handleSearchView();
         handleEditTextWithTextWatcher();
+        handleSearchViewToolBar();
     }
 
      public void handleAndroidButton() {
@@ -209,6 +210,14 @@ public class MainActivity extends AppCompatActivity {
         Button textWatcher = findViewById(R.id.text_watcher_btn);
         textWatcher.setOnClickListener(v -> {
             Intent intent = new Intent(this, EditTextWithTextWatcherActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleSearchViewToolBar() {
+        Button searchViewToolbar = findViewById(R.id.search_tool_bar_btn);
+        searchViewToolbar.setOnClickListener(v -> {
+            Intent intent = new Intent(this, SearchViewToolBarActivity.class);
             startActivity(intent);
         });
      }

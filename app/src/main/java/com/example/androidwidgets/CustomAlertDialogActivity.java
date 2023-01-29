@@ -12,9 +12,9 @@ import com.example.androidwidgets.databinding.CustomAlertDialogItemBinding;
 
 public class CustomAlertDialogActivity extends AppCompatActivity {
 
-   private ActivityCustomAlertDialogBinding binding;
-   private CustomAlertDialogItemBinding customalertdialogitemBinding;
-   private Dialog dialog;
+    private ActivityCustomAlertDialogBinding binding;
+    private CustomAlertDialogItemBinding customalertdialogitemBinding;
+    private Dialog dialog;
 
 
     @Override
