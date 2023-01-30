@@ -195,6 +195,13 @@
                 android:layout_height="wrap_content"
                 android:text="Auto Complete Text" />
 
+            <Button
+                android:id="@+id/multi_auto_txt_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Multi Auto Text"
+                android:textAllCaps="false" />
+
         </LinearLayout>
     </ScrollView>
 

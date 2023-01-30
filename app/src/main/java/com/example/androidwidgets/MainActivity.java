@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+
+import com.example.androidwidgets.CheckBox.CheckBoxActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         handleEditTextWithTextWatcher();
         handleSearchViewToolBar();
         handleAutoCompleteText();
+        handleMultiAutoCompleteText();
     }
 
      public void handleAndroidButton() {
@@ -228,6 +230,14 @@ public class MainActivity extends AppCompatActivity {
         Button autoCompleteView = findViewById(R.id.auto_text_btn);
         autoCompleteView.setOnClickListener(v -> {
             Intent intent = new Intent(this, AutoCompleteTextViewActivity.class);
+            startActivity(intent);
+        });
+     }
+
+     public void handleMultiAutoCompleteText() {
+        Button multiAutoCompleteText = findViewById(R.id.multi_auto_txt_btn);
+        multiAutoCompleteText.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MultiAutoTextActivity.class);
             startActivity(intent);
         });
      }

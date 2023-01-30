@@ -15,6 +15,13 @@
         android:theme="@style/Theme.AndroidWidgets"
         tools:targetApi="31">
         <activity
+            android:name=".MultiAutoTextActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AutoCompleteTextViewActivity"
             android:exported="false">
             <meta-data
@@ -155,7 +162,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".CheckBoxActivity"
+            android:name=".CheckBox.CheckBoxActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

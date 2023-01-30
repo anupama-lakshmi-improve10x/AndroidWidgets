@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckBoxActivity">
+    tools:context=".CheckBox.CheckBoxActivity">
 
     <CheckBox
         android:id="@+id/pizza.cb"
@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:text="Coffee"
         app:layout_constraintBottom_toTopOf="@+id/sugar_cb"
-        app:layout_constraintEnd_toEndOf="@+id/pizza.cb"
         app:layout_constraintStart_toStartOf="@+id/pizza.cb"
         app:layout_constraintTop_toBottomOf="@+id/pizza.cb" />
 
@@ -33,7 +32,6 @@
         android:layout_height="wrap_content"
         android:text="Sugar"
         app:layout_constraintBottom_toTopOf="@+id/order_btn"
-        app:layout_constraintEnd_toEndOf="@+id/coffee_cb"
         app:layout_constraintStart_toStartOf="@+id/coffee_cb"
         app:layout_constraintTop_toBottomOf="@+id/coffee_cb" />
 
@@ -47,5 +45,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toast_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
